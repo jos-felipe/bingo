@@ -1,10 +1,10 @@
-# binGO
+# binGo
 
 Um programa simples em Go para realizar sorteios aleatórios a partir de uma lista de participantes em um arquivo CSV.
 
 ## Descrição
 
-O binGO é uma ferramenta de linha de comando escrita em Go que permite sortear um número específico de ganhadores a partir de uma lista de participantes fornecida em um arquivo CSV. O programa garante um sorteio justo e aleatório, ideal para eventos, meetups, ou qualquer situação que requeira a seleção imparcial de ganhadores.
+O binGo é uma ferramenta de linha de comando escrita em Go que permite sortear um número específico de ganhadores a partir de uma lista de participantes fornecida em um arquivo CSV. O programa garante um sorteio justo e aleatório, ideal para eventos, meetups, ou qualquer situação que requeira a seleção imparcial de ganhadores.
 
 ## Requisitos
 
@@ -15,24 +15,27 @@ O binGO é uma ferramenta de linha de comando escrita em Go que permite sortear 
 
 ### Opção 1: Compilar a partir do código fonte
 
-1. Clone este repositório ou baixe o arquivo `binGO.go`
-2. Navegue até o diretório onde o arquivo está localizado
-3. Compile o programa usando o comando:
-
+1. Clone este repositório:
 ```bash
-go build -o binGO binGO.go
+git clone https://github.com/jos-felipe/bingo.git
+cd bingo
+```
+
+2. Compile o programa usando o comando:
+```bash
+go build -o binGo
 ```
 
 ### Opção 2: Instalar via `go install`
 
 ```bash
-go install github.com/seu-usuario/binGO@latest
+go install github.com/jos-felipe/bingo@latest
 ```
 
 ## Uso
 
 ```bash
-./binGO arquivo.csv numero_de_ganhadores
+./binGo arquivo.csv numero_de_ganhadores
 ```
 
 Onde:
@@ -54,7 +57,7 @@ Gabriela
 
 2. Execute o programa:
 ```bash
-./binGO meetup.csv 3
+./binGo meetup.csv 3
 ```
 
 3. O resultado será algo como:
@@ -75,7 +78,7 @@ O arquivo CSV deve:
 
 ## Como funciona
 
-O binGO funciona seguindo estas etapas:
+O binGo funciona seguindo estas etapas:
 1. Lê a lista de participantes do arquivo CSV especificado
 2. Verifica se há participantes suficientes para o número de ganhadores solicitado
 3. Embaralha a lista de participantes usando um algoritmo aleatório
@@ -88,6 +91,6 @@ O binGO funciona seguindo estas etapas:
 - A aleatoriedade é garantida usando o pacote `math/rand` com uma semente baseada no tempo atual
 - Tratamento adequado de erros para entradas inválidas ou arquivos inexistentes
 
-rm## Contribuições
+## Contribuições
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests no [repositório do GitHub](https://github.com/jos-felipe/bingo).
